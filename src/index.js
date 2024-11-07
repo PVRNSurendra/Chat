@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const chats = require("./models/mongo"); // Assuming this is your mongoose model
+const chats = require("../models/mongo"); // Assuming this is your mongoose model
 app.use(express.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
