@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="window.location.href='/chats/new'">Create chat</button>
+
+    <h3>All Chats</h3>
+    <% for (let chat of allchats) { %>
+    <div>
+      <p><%= chat.from %></p>
+      <p><%= chat.message %></p>
+      <p><%= chat.to %></p>
+      <br />
+    </div>
+    <% } %>
+  </body>
+</html>
